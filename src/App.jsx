@@ -10,7 +10,7 @@
      4. document.addEventListener("DOMContentLoaded", init) → useEffect
      5. 補上原檔 foot-sand 區塊遺漏的一個 </div>
         （瀏覽器原本即自動修正於 </footer> 前，DOM 結果相同）
-     6. 新增 #root 相容規則一條，見 CSS 末段註記
+     6. 新增 #root 與 Tailwind preflight 相容規則，見 CSS 末段註記
 
    資料、識別碼、類別名稱、元素順序、CSS 規則、JavaScript 演算法
    與所有文字內容均逐字保留，未作任何改寫。
@@ -1696,6 +1696,21 @@ html[lang="vi"] .op-claim{font-size:clamp(28px,4.2vw,54px);letter-spacing:.01em;
   .mk-meiryo{font-size:clamp(9px,2.9vw,12.5px)}
 }
 
+
+/* ═══════════════════════════════════════════════════════════
+   Tailwind CSS preflight 相容規則（原 HTML 無此節）
+   本專案的 src/index.css 載入 Tailwind v3，其 preflight 含有
+   ol,ul,menu{list-style:none}，會移除依賴預設標記的清單編號。
+   以下三處清單需要編號，於此明確復原；其餘清單本就自行宣告
+   list-style:none，不受影響。
+   ═══════════════════════════════════════════════════════════ */
+.prose > ol:not(.chron){list-style:decimal}
+.centre-focus{list-style:decimal}
+.duty ol{list-style:decimal}
+/* preflight 另有 h1–h6{font-size:inherit}。全站標題皆自行宣告字級，
+   僅系所位置的「交通資訊」標題沿用瀏覽器預設值，於此明確指定，
+   數值取自無 Tailwind 環境下的計算值 17.55px（1.17em）。 */
+#location .sec-body > h3{font-size:17.55px}
 
 /* ═══════════════════════════════════════════════════════════
    React 根容器相容規則（原 HTML 無此節；掛載至 #root 時必要）
