@@ -1,37 +1,203 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="theme-color" content="#FCFAF2" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1A1816" media="(prefers-color-scheme: dark)" />
-    <script>
-      (function(){try{var s=localStorage.getItem("aiweb-theme");var d=s?s==="dark":matchMedia("(prefers-color-scheme:dark)").matches;if(d)document.documentElement.classList.add("dark")}catch(e){}})();
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <!-- Title, description, and other meta tags -->
-    <title>東亞學系 國立臺灣師範大學</title>
-    <meta name="description" content="Department of East Asian Studies, National Taiwan Normal University" />
-    <meta name="author" content="Eugene Yip" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <!-- ══ 基本識別 ══════════════════════════════════════════════ -->
+    <title>東亞學系 — 國立臺灣師範大學｜Department of East Asian Studies, NTNU</title>
+    <meta name="description" content="國立臺灣師範大學東亞學系介紹：國內唯一具備學士、碩士、博士完整學制的東亞研究學系。收錄學系概況、文化與應用及政經與區域發展兩大學術主軸、發展理念、四種學制招生、課程資訊、三個系級研究中心、專任與兼任師資名錄，以及系所位置與交通資訊。提供中文、英文、日文、越南文、韓文五語內容。" />
     <link rel="canonical" href="https://deas.eugeneyip.com/" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="author" content="Eugene Yip" />
+    <meta name="keywords" content="東亞學系, 臺師大東亞學系, 師大東亞系, 國立臺灣師範大學東亞學系, 東亞研究, 東亞區域研究, 國際漢學, 兩岸關係, 東南亞研究, NTNU Department of East Asian Studies, East Asian Studies Taiwan, 東亜学科, 동아시아학과, Khoa Nghiên cứu Đông Á" />
 
-    <!-- Open Graph -->
+    <!-- ══ 圖示與佈景 ══════════════════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#840000" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- ══ 語言 ══════════════════════════════════════════════════ -->
+    <!--
+      本頁以單一網址搭配用戶端切換提供五種語言，故不宣告 hreflang。
+      hreflang 要求每種語言各有獨立網址；若日後改為 ?lang=xx 形式，
+      再補上對應標記方為正確作法。
+    -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="vi_VN" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+
+    <!-- ══ Open Graph ═══════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="東亞學系 國立臺灣師範大學" />
-    <meta property="og:title" content="東亞學系 國立臺灣師範大學" />
-    <meta property="og:description" content="Department of East Asian Studies, National Taiwan Normal University" />
+    <meta property="og:site_name" content="東亞學系 — 國立臺灣師範大學" />
+    <meta property="og:title" content="東亞學系 — 國立臺灣師範大學" />
+    <meta property="og:description" content="國內唯一具備學士、碩士、博士完整學制的東亞研究學系。學系概況、兩大學術主軸、發展理念、學制招生、課程資訊、系級研究中心、師資名錄與系所位置，提供五語內容。" />
     <meta property="og:url" content="https://deas.eugeneyip.com/" />
+    <meta property="og:image" content="https://deas.eugeneyip.com/og-image.png" />
+    <meta property="og:image:secure_url" content="https://deas.eugeneyip.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="國立臺灣師範大學東亞學系 — Department of East Asian Studies, NTNU" />
 
-    <!-- Twitter / X -->
+    <!-- ══ Twitter / X ══════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="東亞學系 國立臺灣師範大學" />
-    <meta name="twitter:description" content="Department of East Asian Studies, National Taiwan Normal University" />
+    <meta name="twitter:title" content="東亞學系 — 國立臺灣師範大學" />
+    <meta name="twitter:description" content="國內唯一具備學士、碩士、博士完整學制的東亞研究學系。五語內容：中文、English、日本語、Tiếng Việt、한국어。" />
+    <meta name="twitter:image" content="https://deas.eugeneyip.com/og-image.png" />
+    <meta name="twitter:image:alt" content="國立臺灣師範大學東亞學系" />
 
+    <!-- ══ 地理資訊（在地搜尋） ══════════════════════════════════ -->
+    <meta name="geo.region" content="TW-TPE" />
+    <meta name="geo.placename" content="臺北市大安區" />
+    <meta name="geo.position" content="25.0255787;121.5263677" />
+    <meta name="ICBM" content="25.0255787, 121.5263677" />
+
+    <!-- ══ 連線預備 ══════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="dns-prefetch" href="https://www.google.com" />
+    <link rel="dns-prefetch" href="https://www.deas.ntnu.edu.tw" />
+
+    <!-- ══ 結構化資料 ═══════════════════════════════════════════
+         爬蟲毋須執行 JavaScript 即可解析，是本站補足用戶端渲染
+         不足的主要手段。資料均取自原站公開資訊。
+    ═════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://deas.eugeneyip.com/#website",
+          "url": "https://deas.eugeneyip.com/",
+          "name": "東亞學系 — 國立臺灣師範大學",
+          "alternateName": ["NTNU Department of East Asian Studies", "臺師大東亞學系", "東亜学科", "동아시아학과", "Khoa Nghiên cứu Đông Á"],
+          "inLanguage": ["zh-Hant-TW", "en", "ja", "vi", "ko"],
+          "publisher": { "@id": "https://deas.eugeneyip.com/#author" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://deas.eugeneyip.com/#author",
+          "name": "Eugene Yip",
+          "url": "https://www.eugeneyip.com/"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://deas.eugeneyip.com/#webpage",
+          "url": "https://deas.eugeneyip.com/",
+          "name": "東亞學系 — 國立臺灣師範大學",
+          "isPartOf": { "@id": "https://deas.eugeneyip.com/#website" },
+          "about": { "@id": "https://deas.eugeneyip.com/#department" },
+          "inLanguage": "zh-Hant-TW",
+          "description": "國立臺灣師範大學東亞學系的介紹頁，內容整理自該系公開資訊，資料時點為 2026 年 8 月。本頁非官方網站。",
+          "primaryImageOfPage": { "@type": "ImageObject", "url": "https://deas.eugeneyip.com/og-image.png", "width": 1200, "height": 630 },
+          "license": "https://www.deas.ntnu.edu.tw/deas/include/index.php"
+        },
+        {
+          "@type": ["CollegeOrUniversity", "EducationalOrganization"],
+          "@id": "https://deas.eugeneyip.com/#department",
+          "name": "國立臺灣師範大學東亞學系",
+          "alternateName": [
+            "Department of East Asian Studies, National Taiwan Normal University",
+            "国立台湾師範大学 東亜学科",
+            "국립대만사범대학 동아시아학과",
+            "Khoa Nghiên cứu Đông Á, Đại học Sư phạm Quốc lập Đài Loan"
+          ],
+          "url": "https://www.deas.ntnu.edu.tw/deas/include/index.php",
+          "sameAs": ["https://www.deas.ntnu.edu.tw/deas/include/index.php", "https://www.ntnu.edu.tw/"],
+          "description": "國內唯一具備學士、碩士、博士完整學制的東亞研究學系。於 100 學年度由東亞文化暨發展學系與國際漢學研究所整併成立，104 學年度政治學研究所併入，106 學年度增設博士班。以文化與應用、政經與區域發展為兩大主軸。",
+          "foundingDate": "2011",
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "國立臺灣師範大學",
+            "alternateName": "National Taiwan Normal University",
+            "url": "https://www.ntnu.edu.tw/"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "和平東路一段162號　誠大樓9樓",
+            "addressLocality": "大安區",
+            "addressRegion": "臺北市",
+            "postalCode": "106308",
+            "addressCountry": "TW"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 25.0255787, "longitude": 121.5263677 },
+          "email": "deas@deps.ntnu.edu.tw",
+          "telephone": "+886-2-7749-5396",
+          "faxNumber": "+886-2-2366-0593",
+          "hasMap": "https://maps.app.goo.gl/G7UHHukk3fesCLiP9",
+          "employee": { "@type": "Person", "name": "林昌平", "jobTitle": "副教授兼系主任" },
+          "department": [
+            { "@type": "ResearchOrganization", "name": "海外華人研究中心", "alternateName": "Research Center for the Overseas Chinese", "foundingDate": "2014", "url": "https://rcocntnu.blogspot.com/" },
+            { "@type": "ResearchOrganization", "name": "中國大陸研究中心", "alternateName": "Research Center for Mainland China Studies", "foundingDate": "2015", "url": "https://vocus.cc/user/66878b86fd8978000199fb7e" },
+            { "@type": "ResearchOrganization", "name": "日本研究中心", "alternateName": "Japan Research Center", "foundingDate": "2020", "url": "https://ntnueasjrc.blogspot.com/" }
+          ],
+          "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "Bachelor's Degree", "name": "文學士（B.A.）" },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's Degree", "name": "社會科學碩士（M.S.S.）" },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "Doctoral Degree", "name": "社會科學博士（Ph.D.）" }
+          ],
+          "knowsAbout": ["東亞區域研究", "國際漢學", "東亞儒學", "東亞文學與電影", "文化遺產", "文化政策", "華僑研究", "國際關係", "兩岸關係", "國際政治經濟學", "東南亞政治", "海洋政策"],
+          "knowsLanguage": ["zh-Hant", "en", "ja", "vi", "ko"]
+        }
+      ]
+    }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- ══ 無腳本環境的靜態摘要 ══════════════════════════════════
+         供未執行 JavaScript 的爬蟲與使用者取得核心內容。
+         所有敘述均與主體內容一致，未作誇大或補充。
+    ═════════════════════════════════════════════════════════════ -->
+    <noscript>
+      <main>
+        <h1>國立臺灣師範大學　東亞學系</h1>
+        <p><strong>Department of East Asian Studies, National Taiwan Normal University</strong></p>
+        <p>國內唯一具備學士、碩士、博士完整學制的東亞研究學系。於 100 學年度由東亞文化暨發展學系與國際漢學研究所整併成立，104 學年度政治學研究所併入，106 學年度增設博士班。以文化與應用、政經與區域發展為兩大主軸。</p>
+
+        <h2>學術主軸</h2>
+        <ul>
+          <li><strong>文化與應用</strong>：東亞儒學、國際漢學、東亞文學與電影、文化遺產、華僑研究、文化政策。</li>
+          <li><strong>政經與區域發展</strong>：國際關係、兩岸關係、國際政治經濟學、東南亞政治、海洋政策、金融與經濟成長。</li>
+        </ul>
+
+        <h2>學制</h2>
+        <ul>
+          <li>學士班　文學士（B.A.）</li>
+          <li>碩士班　社會科學碩士（M.S.S.）</li>
+          <li>碩士在職專班　國家安全與國際事務研究，社會科學碩士（M.S.S.）</li>
+          <li>博士班　社會科學博士（Ph.D.），106 學年度起招生</li>
+        </ul>
+
+        <h2>師資規模</h2>
+        <p>專任教師 16 位，含教授 8 位、副教授 6 位、助理教授 2 位；另有合聘、兼任與榮退教師及行政團隊。現任系主任為林昌平副教授。</p>
+
+        <h2>系級研究中心</h2>
+        <ul>
+          <li><a href="https://rcocntnu.blogspot.com/">海外華人研究中心</a>（Research Center for the Overseas Chinese，2014 年成立）</li>
+          <li><a href="https://vocus.cc/user/66878b86fd8978000199fb7e">中國大陸研究中心</a>（Research Center for Mainland China Studies，2015 年成立）</li>
+          <li><a href="https://ntnueasjrc.blogspot.com/">日本研究中心</a>（Japan Research Center，2020 年成立）</li>
+        </ul>
+
+        <h2>系所位置</h2>
+        <p>106308 臺北市大安區和平東路一段162號，臺師大校本部誠大樓 9 樓。捷運古亭站 4 號出口或臺電大樓站 2 號出口步行約 8 分鐘；公車 15、18、235、237、278、295、662、663、672、907 及和平幹線至師大站或師大一站。</p>
+
+        <h2>官方網站</h2>
+        <p><a href="https://www.deas.ntnu.edu.tw/deas/include/index.php">國立臺灣師範大學東亞學系官方網站</a>　|　<a href="https://www.ntnu.edu.tw/">國立臺灣師範大學</a></p>
+
+        <p><small>本頁內容整理自該系公開資訊，資料時點為 2026 年 8 月。本頁非官方網站，最新資訊請以官方網站公告為準。本頁另提供 English、日本語、Tiếng Việt、한국어 版本，需啟用 JavaScript。</small></p>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
