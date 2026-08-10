@@ -10,7 +10,7 @@
      4. document.addEventListener("DOMContentLoaded", init) → useEffect
      5. 補上原檔 foot-sand 區塊遺漏的一個 </div>
         （瀏覽器原本即自動修正於 </footer> 前，DOM 結果相同）
-     6. 新增 #root 與 Tailwind preflight 相容規則，見 CSS 末段註記
+     6. 新增 Tailwind preflight 與 #root 相容規則，見 CSS 末段註記
 
    資料、識別碼、類別名稱、元素順序、CSS 規則、JavaScript 演算法
    與所有文字內容均逐字保留，未作任何改寫。
@@ -1698,6 +1698,21 @@ html[lang="vi"] .op-claim{font-size:clamp(28px,4.2vw,54px);letter-spacing:.01em;
 
 
 /* ═══════════════════════════════════════════════════════════
+   窄螢幕的拉丁字母區段標籤
+   英文與越南文的標籤以整串旋轉（writing-mode:vertical-rl）實作，
+   其基礎宣告位於樣式表較後段，會蓋過前面媒體查詢中同權重的規則，
+   故此處於樣式表末端重申，確保窄螢幕確實轉為橫排。
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width:1014px){
+  .sec-mark .zh.lat{writing-mode:horizontal-tb;font-size:21px;letter-spacing:.06em;
+    white-space:nowrap;height:auto !important;line-height:1.2}
+}
+@media (max-width:600px){
+  .sec-mark .zh.lat{font-size:19px}
+}
+
+
+/* ═══════════════════════════════════════════════════════════
    Tailwind CSS preflight 相容規則（原 HTML 無此節）
    本專案的 src/index.css 載入 Tailwind v3，其 preflight 含有
    ol,ul,menu{list-style:none}，會移除依賴預設標記的清單編號。
@@ -1711,6 +1726,7 @@ html[lang="vi"] .op-claim{font-size:clamp(28px,4.2vw,54px);letter-spacing:.01em;
    僅系所位置的「交通資訊」標題沿用瀏覽器預設值，於此明確指定，
    數值取自無 Tailwind 環境下的計算值 17.55px（1.17em）。 */
 #location .sec-body > h3{font-size:17.55px}
+
 
 /* ═══════════════════════════════════════════════════════════
    React 根容器相容規則（原 HTML 無此節；掛載至 #root 時必要）
