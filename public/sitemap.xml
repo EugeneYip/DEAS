@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://deas.eugeneyip.com/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://deas.eugeneyip.com/og-image.png</image:loc>
+      <image:title>國立臺灣師範大學東亞學系</image:title>
+      <image:caption>Department of East Asian Studies, National Taiwan Normal University</image:caption>
+    </image:image>
+  </url>
+</urlset>

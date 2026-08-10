@@ -1,0 +1,29 @@
+# https://deas.eugeneyip.com/
+User-agent: *
+Allow: /
+
+# 明確允許主要搜尋與社群預覽爬蟲
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Yeti
+Allow: /
+User-agent: NaverBot
+Allow: /
+User-agent: facebookexternalhit
+Allow: /
+User-agent: Twitterbot
+Allow: /
+User-agent: LinkedInBot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://deas.eugeneyip.com/sitemap.xml

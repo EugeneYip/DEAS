@@ -1,0 +1,15 @@
+{
+  "name": "東亞學系 — 國立臺灣師範大學",
+  "short_name": "東亞學系",
+  "description": "國立臺灣師範大學東亞學系介紹頁",
+  "lang": "zh-Hant-TW",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#4E070B",
+  "theme_color": "#840000",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
